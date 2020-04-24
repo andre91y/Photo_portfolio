@@ -1,0 +1,51 @@
+$color-nav-menu: crimson;
+ 
+
+
+.dark-bg {
+	position: relative;
+	z-index: 11;
+		&::before {
+		content:'';
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 10;
+	}
+}
+
+
+
+@font-face {
+	font-family: 'Bickham Script One';
+	src: url('../fonts/bickham_script_one.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/bickham_script_one.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/bickham_script_one.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/bickham_script_one.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/bickham_script_one.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/bickham_script_one.svg#bickham_script_one') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Bikham Cyr Script';
+	src: url('../fonts/bikham_cyr_script.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/bikham_cyr_script.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/bikham_cyr_script.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/bikham_cyr_script.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/bikham_cyr_script.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/bikham_cyr_script.svg#bikham_cyr_script') format('svg'); /* Chrome < 4, Legacy iOS */
+}			
+	
+@font-face {
+	font-family: 'Poiret One';
+
+	src: url('../fonts/poiret_one.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/poiret_one.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/poiret_one.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/poiret_one.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/poiret_one.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/poiret_one.svg#poiret_one') format('svg'); /* Chrome < 4, Legacy iOS */
+}

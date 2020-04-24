@@ -1,0 +1,22 @@
+
+
+
+#slider_about{
+	width:400px;
+	height:600px;
+	border:5px solid #fff;
+	overflow:hidden;
+	z-index: 29;
+	box-sizing: border-box;
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#slider_about ul{
+	list-style:none;
+	margin: 0;
+	padding: 0; 
+}
+
+	

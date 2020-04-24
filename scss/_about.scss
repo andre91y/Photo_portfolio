@@ -1,0 +1,175 @@
+.about {
+	background: rgb(255,254,254);
+background: -webkit-linear-gradient(bottom, rgba(255,254,254,1) 0%, rgba(22,22,22,1) 100%);
+background: -o-linear-gradient(bottom, rgba(255,254,254,1) 0%, rgba(22,22,22,1) 100%);
+background: linear-gradient(to top, rgba(255,254,254,1) 0%, rgba(22,22,22,1) 100%); 
+	width: 100vw;
+	
+	padding: 1rem;
+	&-phone {
+		display: flex;
+		font-size: 20px;
+		color: white;
+	}
+	&-descr {
+		width: 40%;
+		margin-left: 5%;
+	&__title {
+		color: #fff;
+		text-align: center;
+		font-size: 35px;
+		font-family: "Poiret One", sans-serif;
+		margin-bottom: 25px;
+		font-weight: 700;
+	}
+	&__description {
+		font-family:  "Poiret One", sans-serif;
+		font-size: 30px;
+		color: #fff;
+	}
+	}
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto; 
+} 
+.contacts {
+	display: flex;
+	margin-left: auto;
+	justify-content: space-between;
+}
+.icons {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    
+
+    a {
+      padding: 0.6rem;
+
+      &:hover {
+        color: $color-nav-menu;
+        transition: all 0.5s ease-out;
+      }
+    }
+}
+.wrapp-about {
+	margin: 0 auto;
+	display: flex;
+	padding-left: 15%;
+}
+
+.button_hola,
+.button_hola::before,
+.button_hola::after,
+.button_hola span,
+.button_hola span::before,
+.button_hola span::after
+{
+  -webkit-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+}
+ 
+ #body_button{
+  
+  margin: 0;
+  padding: 0;
+  color: #000;
+
+  text-align: center;
+  padding-top: 12vh;
+}
+.button_hola{
+  position: relative;
+  display: inline-block;
+  padding: 0.3em;
+  margin: 1em;
+  border: solid 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+ 
+.button_hola:hover
+{
+  -webkit-box-shadow: 0 0 5em .5em rgba(220, 20, 60,0.5);
+          box-shadow: 0 0 5em .5em rgba(220, 20, 60,0.5);
+}
+ 
+.button_hola span a
+{
+	-webkit-box-sizing:border-box;
+	        box-sizing:border-box;
+  display: inline-block;
+  width: 100%;
+  padding: 0.6em 2em;
+  color: black;
+  font-family: "Roboto Cn", sans-serif;
+}
+ 
+.button_hola:hover span a
+{
+  background-color: #fff;
+  color: $color-nav-menu;
+}
+ 
+.button_hola::before,
+.button_hola::after,
+.button_hola span::before,
+.button_hola span::after
+{
+  content: '';
+  position: absolute;
+  border: 1px;
+}
+ 
+.button_hola::before,
+.button_hola span::before
+{
+  border-style: solid none;  
+}
+ 
+.button_hola::before,
+.button_hola span::after{      
+  left: 0;
+  top: -0.4em;
+  width: 100%; 
+  height: calc(100% + 0.8em);
+}
+ 
+.button_hola::after,
+.button_hola span::after
+{
+  border-style: none solid;   
+}
+ 
+.button_hola::after,
+.button_hola span::before
+{
+  top: 0;
+  left: -0.4em;
+  height: 100%;
+  width: calc(100% + 0.8em); 
+}
+ 
+.button_hola:hover::after,
+.button_hola:hover span::after
+{
+  -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
+}
+ 
+.button_hola:hover::before,
+.button_hola:hover span::before
+{
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+}
+ 
+.button_hola:hover span::after,
+.button_hola:hover span::before
+{
+  opacity: 0;
+}

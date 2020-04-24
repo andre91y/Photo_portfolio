@@ -1,0 +1,136 @@
+body {
+   width: 100vw;
+   height: 100vh;
+   color: #fff;
+   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+   background-size: 400% 400%;
+   -webkit-animation: Gradient 15s ease infinite;
+   -moz-animation: Gradient 15s ease infinite;
+   animation: Gradient 15s ease infinite;
+   z-index: -1;
+}
+
+@-webkit-keyframes Gradient {
+   0% {
+      background-position: 0% 50%
+   }
+   50% {
+      background-position: 100% 50%
+   }
+   100% {
+      background-position: 0% 50%
+   }
+}
+
+@-moz-keyframes Gradient {
+   0% {
+      background-position: 0% 50%
+   }
+   50% {
+      background-position: 100% 50%
+   }
+   100% {
+      background-position: 0% 50%
+   }
+}
+
+@keyframes Gradient {
+   0% {
+      background-position: 0% 50%
+   }
+   50% {
+      background-position: 100% 50%
+   }
+   100% {
+      background-position: 0% 50%
+   }
+}
+
+
+.portf {
+   display: block;
+   font-family: 'Roboto Cn', sans-serif;
+   font-size: 45px;
+   text-align: center;
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: 300;
+   margin-bottom: 4rem;
+}
+.nav-zero {
+   padding-top: 1rem; 
+}
+
+.wrapp-portf {
+
+  margin: 0 auto;
+}
+
+
+
+
+%transition_all_03s {
+  transition:all .3s ease;
+}
+%backface_visibility_hidden{
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 28vw;
+  transition:opacity .6s ease;
+  &.swiper-container-coverflow{
+    padding-top:2%;
+  }
+  &.loading{
+    opacity:0;
+    visibility:hidden;
+  }
+  &:hover{
+    .swiper-button-prev,
+    .swiper-button-next{
+      transform:translateX(0);
+      opacity:1;
+      visibility:visible;
+    }
+  }
+}
+.swiper-wrapper{
+
+}
+.swiper-slide{
+  background-position:center;
+  background-size:cover;
+  .slide-inner{
+    
+  }
+  .entity-img{
+    display:none;
+  }
+  .content{
+    position:absolute;
+    top:40%;
+    left:0;
+    width:90%;
+    padding-left:5%;
+    color:#fff;
+    .title{
+      font-size:2.6em;
+      font-weight:bold;
+      margin-bottom:30px;
+    }
+    .caption{
+      display:block;
+      font-size:13px;
+      line-height:1.4;
+    }
+  }
+}

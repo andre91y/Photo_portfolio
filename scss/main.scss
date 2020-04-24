@@ -1,0 +1,17 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+@import 'config';
+@import 'header';
+@import 'slider-bg';
+@import 'about';
+@import 'slider-about';
+@import 'portfolio';
+@import 'contact';
+@import 'menu';
+@import 'media';
